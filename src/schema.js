@@ -1,5 +1,7 @@
 const { gql } = require('apollo-server');
 
+const nothing = false
+
 const typeDefs = gql`
   type Query {
     "Query to get tracks array for the homepage grid"
@@ -69,5 +71,6 @@ const typeDefs = gql`
     videoUrl: String
   }
 `;
+
 
 module.exports = typeDefs;
