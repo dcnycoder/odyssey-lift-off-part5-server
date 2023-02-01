@@ -38,7 +38,9 @@ const typeDefs = gql`
     "The track's illustration to display in track card or track page detail"
     thumbnail: String
     "The track's approximate length to complete, in minutes"
-    length: Int
+    length: Int @deprecated (reason: use durationInSeconds)
+    "The tracks's video duration, in seconds"
+    durationInSeconds: Int
     "The number of modules this track contains"
     modulesCount: Int
     "The track's complete description, can be in markdown format"
